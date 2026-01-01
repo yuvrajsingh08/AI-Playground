@@ -9,7 +9,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ai-knowledge-extractor" element={<Dashboard />} />
-        <Route path="/chat" element={<CharacterChat />} />
+        <Route path="/chat-with-character" element={<CharacterChat />} />
       </Routes>
     </BrowserRouter>
   );

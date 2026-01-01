@@ -57,6 +57,7 @@ const Home = () => {
         </Link>
 
         {/* Feature 2 */}
+        <Link to="/chat-with-character" className="block group">
         <div className="group rounded-3xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 cursor-pointer">
           <div className="flex items-center gap-4">
             <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-slate-800 to-slate-900 text-white flex items-center justify-center text-2xl shadow-lg transition-transform duration-300 group-hover:scale-110">
@@ -88,10 +89,11 @@ const Home = () => {
           </ul>
 
           <div className="mt-8 flex items-center gap-2 text-slate-900 font-medium group-hover:gap-3 transition-all duration-300">
-            <span>Coming Soon</span>
+            <span>Get Started</span>
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </div>
         </div>
+        </Link>
       </main>
 
       {/* Footer */}
