@@ -7,7 +7,7 @@ const extractRoutes = require("./routes/extractRoutes");
 const analyzeRoutes = require("./routes/analyzeRoutes");
 const documentRoutes = require("./routes/documentRoutes");
 const chatRoutes = require("./routes/chatRoutes");
-
+const PORT = process.env.PORT || 5000;
 dotenv.config();
 
 const app = express();
@@ -21,4 +21,4 @@ app.use("/api/analyze", analyzeRoutes);
 app.use("/api/document", documentRoutes);
 app.use("/api/chat", chatRoutes);
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
