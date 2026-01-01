@@ -1,78 +1,102 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 text-slate-900" style={{ fontFamily: "'Inter', sans-serif" }}>
       {/* Header */}
-      <header className="max-w-7xl mx-auto px-6 py-10">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+      <header className="max-w-7xl mx-auto px-6 py-16 animate-fade-in">
+        <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-linear-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
           AI Playground
         </h1>
-        <p className="mt-3 text-slate-600 dark:text-slate-400 max-w-2xl">
+        <p className="mt-6 text-lg text-slate-600 max-w-2xl">
           Powerful AI tools to extract knowledge and interact with your
           favourite characters.
         </p>
       </header>
 
       {/* Features */}
-      <main className="max-w-7xl mx-auto px-6 py-10 grid gap-8 md:grid-cols-2">
+      <main className="max-w-7xl mx-auto px-6 py-10 grid gap-6 md:grid-cols-2">
         {/* Feature 1 */}
-
-    <Link to="/ai-knowledge-extractor">
-    <div className="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-8 hover:shadow-xl transition-all">
-          <div className="flex items-center gap-4">
-            <div className="h-12 w-12 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center text-xl font-bold">
-              AI
+        <Link to="/ai-knowledge-extractor" className="block group">
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1">
+            <div className="flex items-center gap-4">
+              <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-slate-800 to-slate-900 text-white flex items-center justify-center text-2xl font-bold shadow-lg transition-transform duration-300 group-hover:scale-110">
+                AI
+              </div>
+              <h2 className="text-2xl font-semibold text-slate-900">
+                AI Knowledge Extractor
+              </h2>
             </div>
-            <h2 className="text-2xl font-semibold">
-              AI Knowledge Extractor
-            </h2>
+
+            <p className="mt-6 text-slate-600 leading-relaxed">
+              Upload a PDF and let AI extract insights, summaries, key points,
+              and important information in seconds.
+            </p>
+
+            <ul className="mt-6 space-y-3 text-sm text-slate-500">
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-slate-900"></span>
+                Smart summaries & highlights
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-slate-900"></span>
+                Question answering from PDF
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-slate-900"></span>
+                Fast & accurate extraction
+              </li>
+            </ul>
+
+            <div className="mt-8 flex items-center gap-2 text-slate-900 font-medium group-hover:gap-3 transition-all duration-300">
+              <span>Get Started</span>
+              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </div>
           </div>
-
-          <p className="mt-4 text-slate-600 dark:text-slate-400">
-            Upload a PDF and let AI extract insights, summaries, key points,
-            and important information in seconds.
-          </p>
-
-          <ul className="mt-4 space-y-2 text-sm text-slate-500 dark:text-slate-400">
-            <li>• Smart summaries & highlights</li>
-            <li>• Question answering from PDF</li>
-            <li>• Fast & accurate extraction</li>
-          </ul>
-        </div>
         </Link>
 
         {/* Feature 2 */}
-        <div className="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-8 hover:shadow-xl transition-all">
+        <div className="group rounded-3xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:-translate-y-1 cursor-pointer">
           <div className="flex items-center gap-4">
-            <div className="h-12 w-12 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center text-xl font-bold">
+            <div className="h-14 w-14 rounded-2xl bg-linear-to-br from-slate-800 to-slate-900 text-white flex items-center justify-center text-2xl shadow-lg transition-transform duration-300 group-hover:scale-110">
               💬
             </div>
-            <h2 className="text-2xl font-semibold">
+            <h2 className="text-2xl font-semibold text-slate-900">
               Chat with Anime Characters
             </h2>
           </div>
 
-          <p className="mt-4 text-slate-600 dark:text-slate-400">
+          <p className="mt-6 text-slate-600 leading-relaxed">
             Build conversations with your favourite anime characters,
             powered by AI personalities and realistic responses.
           </p>
 
-          <ul className="mt-4 space-y-2 text-sm text-slate-500 dark:text-slate-400">
-            <li>• Choose anime characters</li>
-            <li>• Personality-based replies</li>
-            <li>• Immersive chat experience</li>
+          <ul className="mt-6 space-y-3 text-sm text-slate-500">
+            <li className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-slate-900"></span>
+              Choose anime characters
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-slate-900"></span>
+              Personality-based replies
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-slate-900"></span>
+              Immersive chat experience
+            </li>
           </ul>
 
-          <button className="mt-6 inline-flex items-center gap-2 rounded-lg border border-slate-900 dark:border-white px-5 py-2.5 text-sm font-medium hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition">
-            Start Chat
-          </button>
+          <div className="mt-8 flex items-center gap-2 text-slate-900 font-medium group-hover:gap-3 transition-all duration-300">
+            <span>Coming Soon</span>
+            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="mt-16 border-t border-slate-200 dark:border-slate-800 py-6 text-center text-sm text-slate-500">
-        Built with AI • Modern • Scalable
+      <footer className="mt-20 border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+        <p>Built with AI • Modern • Scalable</p>
       </footer>
     </div>
   );
