@@ -1,5 +1,5 @@
 const express = require("express");
-const { analyzeText } = require("../controller/analyzeController");
+const { analyzeText } = require("../controllers/analyzeController");
 
 const router = express.Router();
 

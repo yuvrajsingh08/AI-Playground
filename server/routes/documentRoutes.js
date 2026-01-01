@@ -1,5 +1,5 @@
 const express = require("express");
-const { saveDocument } = require("../controller/documentController");
+const { saveDocument } = require("../controllers/documentController");
 
 const router = express.Router();
 

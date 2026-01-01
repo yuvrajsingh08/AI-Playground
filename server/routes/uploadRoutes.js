@@ -1,5 +1,5 @@
 const express = require("express");
-const { uploadPDF } = require("../controller/uploadController");
+const { uploadPDF } = require("../controllers/uploadController");
 const { upload } = require("../utils/mutler");
 
 const router = express.Router();

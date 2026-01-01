@@ -1,5 +1,5 @@
 const express = require("express");
-const { extractText } = require("../controller/extractController");
+const { extractText } = require("../controllers/extractController");
 
 const router = express.Router();
 
